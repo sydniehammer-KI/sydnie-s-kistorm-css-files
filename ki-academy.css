@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&family=Trirong:wght@400;700&family=Figtree:wght@100;400;700&family=Source+Code+Pro:wght@400&display=swap');
+
+
+/*BANNER IMAGE*/
+.home-banner{
+  display: flex !important;
+  align-content: center;
+  justify-content: center;
+  width:100%; 
+  max-height: 300px; 
+  min-height: 150px;
+  background-size:cover;
+  background-position: 50% 50%  ;
+  padding: 3em 2em;
+  background-repeat: no-repeat;
+  /*box-shadow: inset 0 0 10px 10px #f8f8f6; */
+  margin: 2em 0 0 0;
+}
+
+/*BANNER TEXT*/
+.home-banner > span {
+  font-size:calc(1em + 2vw);
+  line-height: 1.3em;
+  text-align:center;
+  margin:auto;
+  color:white;
+  text-shadow: 0px 0px 0px white;
+}
+
+
+/*KI ACADEMY BRAND FONT RULES*/
+    h1 {
+      font-family: 'Libre Franklin', sans-serif;
+      font-size: 42px;
+    }
+
+    h2 {
+      font-family: 'Trirong', serif;
+      font-size: 36px;
+    }
+
+    h3 {
+      font-family: 'Libre Franklin', sans-serif;
+      font-size: 32px;
+    }
+
+    h4 {
+      font-family: 'Trirong', serif;
+      font-size: 24px;
+    }
+
+    h5 {
+      font-family: 'Figtree', sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    h6 {
+      font-family: 'Source Code Pro', monospace;
+      font-size: 8px;
+      color: #de6148;
+    }
+
+    p {
+      font-family: 'Figtree', sans-serif;
+      font-weight: 100; /* Thin */
+      font-size: 18px;
+    }
+
+    p strong, p b {
+    font-weight: 700; /* Bold, visibly heavier */
+    }
+
+    p strong, p b, li strong, li b {
+    font-weight: 700; /* Bold, visibly heavier */
+    }
+    
+    ul li {
+    font-family: 'Figtree', sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    margin-bottom: 8px;
+    }
+
+
+/*OPTIONAL CHECKBOX STYLE LIST*/
+/* Hide the default checkbox */
+.checklist input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #373f4c;
+  border-radius: 2px;
+  margin-right: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Background color when checked */
+.checklist input[type="checkbox"]:checked {
+  background-color: #FFFFFF; /* ✅ Your chosen color */
+  border-color: #759670;
+}
+
+/* Optional: Add a checkmark symbol */
+.checklist input[type="checkbox"]:checked::after {
+  content: "✔";
+  color: #373f4c;
+  font-size: 16px;
+  position: absolute;
+  top: 0px;
+  bottom: 2px;
+  left: 0px;
+}
+
+/* Remove default list style */
+.checklist {
+  list-style: none;
+  padding-left: 0;
+}
+
+.checklist li {
+  margin-bottom: 8px;
+  font-family: 'Figtree', sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+}
+
+
+/*COHORT IMAGE CONTAINERS USED ON THE 'COHORT HOME' PAGE*/
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.box {
+  background-color: #F6F6F6;
+  border-radius: 1px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 0px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  
+  /* ADD THESE LINES to make perfect squares */
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ADD THIS NEW CLASS for image containers */
+.image-container {
+  width: 100%;
+  height: 100%; /* Adjust this percentage for image vs text space */
+  margin-bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* No distortion or cropping */
+  border-radius: 0px;
+  transition: opacity 0.1s ease; /* Smooth transition */
+
+}
+
+/*COHORT CONTAINER TEXT CSS DESIGN RULES*/
+.box h4 {
+  font-size: 24px; /* Reduced from 30px to fit square better */
+  margin: 0 0 10px 0; /* Changed margin */
+  color: #333;
+  white-space: nowrap;
+}
+
+.box p {
+  font-size: 16px; /* Reduced from 18px */
+  color: #333;
+  white-space: nowrap;
+  margin: 0; /* Changed margin */
+}
+
+.box:hover {
+  background-color: #3033E6;
+  cursor: pointer;
+}
+
+.box:hover h4,
+.box:hover p {
+  color: #FFFFFF !important;
+}
+
+.box a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.box a:hover {
+  text-decoration: none;
+}
